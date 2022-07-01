@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6F32EB1-2463-48D6-AFA6-BBDB9AB4B75A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotFix_Dragon</RootNamespace>
+    <AssemblyName>HotFix_Dragon</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\ILRuntime\HotFixDll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNITY_EDITOR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\ILRuntime\HotFixDll\</OutputPath>
+    <DefineConstants>TRACE;UNITY_EDITOR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\Library\ScriptAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\GersonFrame\Third\DOTween\DOTween.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GersonFrame">
+      <HintPath>..\..\Library\ScriptAssemblies\GersonFrame.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ILRuntime">
+      <HintPath>..\..\Library\ScriptAssemblies\ILRuntime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>UnityDlls\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>UnityDlls\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>UnityDlls\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\dragonrun1\Assets\HotFix_Dragon~\UnityDlls\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Unity\Hub\Editor\2019.4.9f1\Editor\Data\PlaybackEngines\windowsstandalonesupport\Variations\mono\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>UnityDlls\UnityEngine.DirectorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>UnityDlls\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>UnityDlls\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>UnityDlls\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>UnityDlls\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\..\dragonrun1\Assets\HotFix_Dragon~\UnityDlls\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>UnityDlls\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\SofeWare\Unity20190409\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>UnityDlls\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\dragonrun1\Assets\HotFix_Dragon~\UnityDlls\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>UnityDlls\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\dragonrun1\Assets\HotFix_Dragon~\UnityDlls\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HotClassObjectPool.cs" />
+    <Compile Include="HotSingleton.cs" />
+    <Compile Include="IViewBase.cs" />
+    <Compile Include="Frame\BaseHotMgr.cs" />
+    <Compile Include="Frame\HotMsgType.cs" />
+    <Compile Include="Frame\BaseHotMono\BaseHotMono.cs" />
+    <Compile Include="Frame\HotArchitecture\HotAbArchitecture.cs" />
+    <Compile Include="Frame\HotArchitecture\HotBindableProperty.cs" />
+    <Compile Include="Frame\HotArchitecture\HotCrcProperity.cs" />
+    <Compile Include="Frame\HotArchitecture\IHotBelongToArchitecture.cs" />
+    <Compile Include="Frame\HotArchitecture\IHotCanSetArchitecture.cs" />
+    <Compile Include="Frame\HotArchitecture\IHotCommand.cs" />
+    <Compile Include="Frame\HotArchitecture\IHotController.cs" />
+    <Compile Include="Frame\HotArchitecture\IHotModel.cs" />
+    <Compile Include="Frame\HotArchitecture\IHotSystem.cs" />
+    <Compile Include="Frame\HotArchitecture\IHotUtility.cs" />
+    <Compile Include="Frame\HotArchitecture\HotIOC\IOCContainer.cs" />
+    <Compile Include="Frame\HotArchitecture\HotRule\IHotCanGetModel.cs" />
+    <Compile Include="Frame\HotArchitecture\HotRule\IHotCanGetSystem.cs" />
+    <Compile Include="Frame\HotArchitecture\HotRule\IHotCanGetUtility.cs" />
+    <Compile Include="Frame\HotArchitecture\HotRule\IHotCanRegisterMsg.cs" />
+    <Compile Include="Frame\HotArchitecture\HotRule\IHotCanSendCommand.cs" />
+    <Compile Include="Frame\HotArchitecture\HotRule\IHotCanSendMsg.cs" />
+    <Compile Include="Frame\HotIlRuntime\IAnimationFunction.cs" />
+    <Compile Include="Frame\HotIlRuntime\IAwake.cs" />
+    <Compile Include="Frame\HotIlRuntime\ICollisionEnter.cs" />
+    <Compile Include="Frame\HotIlRuntime\ICollisionExit.cs" />
+    <Compile Include="Frame\HotIlRuntime\ICollisionStay.cs" />
+    <Compile Include="Frame\HotIlRuntime\IDrawGizmos.cs" />
+    <Compile Include="Frame\HotIlRuntime\IFixedUpdate.cs" />
+    <Compile Include="Frame\HotIlRuntime\ILateUpdate.cs" />
+    <Compile Include="Frame\HotIlRuntime\ILMonoMgr.cs" />
+    <Compile Include="Frame\HotIlRuntime\IMono.cs" />
+    <Compile Include="Frame\HotIlRuntime\IOnDestroy.cs" />
+    <Compile Include="Frame\HotIlRuntime\IOnDisable.cs" />
+    <Compile Include="Frame\HotIlRuntime\IOnEnable.cs" />
+    <Compile Include="Frame\HotIlRuntime\IParticleSysStop.cs" />
+    <Compile Include="Frame\HotIlRuntime\IParticleTrigger.cs" />
+    <Compile Include="Frame\HotIlRuntime\IPointerDown.cs" />
+    <Compile Include="Frame\HotIlRuntime\IPointerDrag.cs" />
+    <Compile Include="Frame\HotIlRuntime\IPointerExit.cs" />
+    <Compile Include="Frame\HotIlRuntime\IPointerUp.cs" />
+    <Compile Include="Frame\HotIlRuntime\IStart.cs" />
+    <Compile Include="Frame\HotIlRuntime\ITriggerEnter.cs" />
+    <Compile Include="Frame\HotIlRuntime\ITriggerExit.cs" />
+    <Compile Include="Frame\HotIlRuntime\ITriggerStay.cs" />
+    <Compile Include="Frame\HotIlRuntime\IUpdate.cs" />
+    <Compile Include="Frame\StateMachine\HotBaseState.cs" />
+    <Compile Include="Frame\StateMachine\HotEnemyMoveStateCtrl.cs" />
+    <Compile Include="Frame\StateMachine\IHotStateController.cs" />
+    <Compile Include="Frame\Tool\HotJoystick.cs" />
+    <Compile Include="Frame\Tool\HotMyDebuger.cs" />
+    <Compile Include="Frame\Tool\HotSimpleObjectPool.cs" />
+    <Compile Include="Frame\Tool\ICanSearch.cs" />
+    <Compile Include="Frame\Tool\SimpleIOC.cs" />
+    <Compile Include="Frame\UI\HotUIManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UnityDlls\Unity.TextMeshPro.dll" />
+    <Content Include="UnityDlls\UnityEngine.AnimationModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.AudioModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.CoreModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.CoreModule.pdb" />
+    <Content Include="UnityDlls\UnityEngine.DirectorModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.dll" />
+    <Content Include="UnityDlls\UnityEngine.ImageConversionModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.IMGUIModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.InputLegacyModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.ParticleSystemModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.Physics2DModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.PhysicsModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.TextRenderingModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.UIModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.UIModule.pdb" />
+    <Content Include="UnityDlls\UnityEngine.UnityWebRequestModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.UnityWebRequestTextureModule.dll" />
+    <Content Include="UnityDlls\UnityEngine.UnityWebRequestWWWModule.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProtoCsFiles\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd /d ../ILRuntime/HotFixDll
+ 
+del *.bytes
+
+ren HotFix_Dragon.dll HotFix_Dragon.dll.bytes
+
+ren HotFix_Dragon.pdb HotFix_Dragon.pdb.bytes 
+del *.dll</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+
+<linker>
+  <assembly fullname="HotFix_Dragon">
+    <type fullname="HotFix_Dragon.Fight_Hot" preserve="all"/>
+    <type fullname="HotFix_Dragon.UI_Hot" preserve="all"/>
+  </assembly>
+</linker>

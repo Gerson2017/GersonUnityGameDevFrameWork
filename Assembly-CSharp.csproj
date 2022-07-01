@@ -1,0 +1,1373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{B19D47A8-58C3-9B8C-A47E-36E074F43786}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2020_3_33;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;UNITY_UGP_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_CLOUD_FEATURES;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2020.3.33f1c2</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\BuildString.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\IsName.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoAnimationFunction.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Renderer\IsVisible.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\Instantiate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\I18NText.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_Dictionary_2_String_ILTypeInstance_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CircleCollider2D\GetRadius.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetMute.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\Sequence.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Euler.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\GetDirection.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\StackedAction.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetCenterOfMass.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\SetCenter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\FloatClamp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetGravityWeight.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\SetCenter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\GetAxis.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\Interrupt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\AdaptHelper.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetSqrMagnitude.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\IsParameterControlledByCurve.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\TaskGuard.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPanLevel.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoPointerExit.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddRelativeTorque.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetAngularVelocity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\Inverter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\Adapt_IMessage.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetEnableEmission.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\WakeUp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetLoop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\IsChildOf.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\SetFloat.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedFloat.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Timeline\Resume.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetAcceleration.cs" />
+    <Compile Include="Assets\GersonFrame\Third\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GersonFrame_SelfILRuntime_AbstractMonoValueInvoker_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\RandomSelector.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_Object_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetParent.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedString.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\Crc32_Binding.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_EventSystems_PointerEventData_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\Operator.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\Save.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\IntAbs.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetSlopeLimit.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\RandomProbability.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetTime.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_Component_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedRect.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Idle.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddTorque.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\Sleep.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Log.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Reflection\CompareFieldValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Reflection\GetFieldValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\Rewind.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetUpVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Reflection\InvokeMethod.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\I18NSprite.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetCookieSize.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\PlayDelayed.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoBehaviourAdapter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetLoop.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_Dictionary_2_Type_Object_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\UIManager\Scripts\ViewElementBase.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\UntilSuccess.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SharedGameObjectToTransform.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\GetHeight.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\SetString.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetPriority.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_Application_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\UIManager\Scripts\BaseHotView.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedObject.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedUInt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\ReturnFailure.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\StopBehaviorTree.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetAngularVelocity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalScale.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\PrioritySelector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\StopPlayback.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\IsIntPositive.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoParticleTrigger.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetAngularVelocity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\IntComparison.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\UseGravity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\HasReceivedEvent.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\CLRBindings.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedGameObjectList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\CrossFade.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedTransformList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsStopped.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\Lerp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\IsKeyUp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Move.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Physics2D\Raycast.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\SetValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetEmissionRate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\GetTag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\MovePosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\BoolFlip.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetVelocity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\Play.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\ValueTypeBinding\QuaternionBinder.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledStartTime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\FloatComparison.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoTriggerExit.cs" />
+    <Compile Include="Assets\GersonFrame\Guide\SonGuide\BaseGuide.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetFloatParameter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPitch.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetAngleToTarget.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetMaxDistance.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetDeltaPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\IsButtonUp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Physics2D\Circlecast.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetTrigger.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\Rotate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetDrag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetVelocity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CircleCollider2D\SetOffset.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\AbstractClass\AbstractMonoValueInvoker.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\MoveTowards.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetSpeed.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetIntegerParameter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Stop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedVector3.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetBoolParameter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetLayerWeight.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\GetCenter.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoParticleSystemStop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetIgnoreListenerPause.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetVolume.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetIntensity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\SetActive.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\IntClamp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\HasKey.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\AbstractClass\AbstractMonoNormalInvoker.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\RestartBehaviorTree.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\AngleAxis.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\GetCenter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetRightVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetAngularSpeed.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedVector4.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\DeleteKey.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\BehaviorTreeReference.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoOnDrawGizmos.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_Dictionary_2_Int32_Type_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\MoveRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\Lerp.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\StateTransiton_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\RotateAround.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\BoolOperator.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetChild.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\AddTorque.cs" />
+    <Compile Include="Assets\GersonFrame\Third\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedCollision.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetIntegerParameter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\PerformInterruption.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetRightVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Simulate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowBias.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartColor.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Physics2D\Linecast.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\FindWithTag.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Action_1_Int32_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetDirection.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\SetWrapMode.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GersonFrame_MonoSingleton_1_UIManager_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedBool.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedObjectList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetTime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\IsMouseUp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedInt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\IsFloatPositive.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetXY.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\EntryTask.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\GetFloat.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\WakeUp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetType.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsPaused.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetDrag.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoStart.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\PlayScheduled.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetBoolParameter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetLookAtPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\BehaviorTree.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\Translate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetIsStopped.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Time\GetDeltaTime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\I18NFont.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetLoop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetRolloffMode.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\Angle.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SharedTransformsToTransformList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Time\GetTime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetAngularDrag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedQuaternion.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\Play.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedVector3.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_List_1_Object_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetAngularSpeed.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetSpotAngle.cs" />
+    <Compile Include="Assets\GersonFrame\Third\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetLayerWeight.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Physics\Raycast.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedVector2.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Debug\LogValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetDrag.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\CoroutineAdapter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\WaitForState.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\GetInt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\Operator.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\DestroyImmediate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Time\GetTimeScale.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\LookRotation.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_RectTransform_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetGravityScale.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\LayerMask\GetLayer.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\RotateTowards.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\ResetPath.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetFreezeRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Timeline\Stop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\LocalizationData.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredTrigger2D.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetCookie.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Type_Binding.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\MyDebuger_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetVector2.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_List_1_ILTypeInstance_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\Distance.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetApplyRootMotion.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowSoftness.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddRelativeForce.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetMaxParticles.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoEnable.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetRightVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\StartBehaviorTree.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetColor.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_String_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetXYZ.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartDelay.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetCenter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetTimeSamples.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalRotation.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Int32_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Vibration\ThirdParties\NiceVibrations\Common\Scripts\MMVibrationManager.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\Sample.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoPointerUp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SharedTransformToGameObject.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\SetValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\FloatAbs.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\SetTag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Identity.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Data\CLRBindings.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetMass.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedBehaviour.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsAlive.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetRange.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetCenter.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoCollisionEnter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedCollision2D.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\AddForce.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Behaviour\SetEnabled.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Timeline\Pause.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\GetString.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\ExternalBehaviorTree.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetEmissionRate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedObjectList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\GetKey.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Timeline\IsPlaying.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetFloatParameter.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_RectTransformUtility_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Lerp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetCookieSize.cs" />
+    <Compile Include="Assets\GersonFrame\UIManager\Scripts\BaseInnerView.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetMass.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\BoolComparison.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetPlaybackSpeed.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\ActiveSelf.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Reflection\GetPropertyValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Timeline\IsPaused.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\GetComponent.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_IDisposable_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetVector3.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetAcceleration.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedMaterial.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetMass.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetUseGravity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\BoxCollider2D\GetSize.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetPitch.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Reflection\SetPropertyValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetAngularDrag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetEnableEmission.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedTrigger.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetRemainingDistance.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\DeleteAll.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedColor.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Stop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetVelocity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\SendMessage.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetDestination.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetTime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Debug\LogFormat.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetIgnoreListenerPause.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetCullingMask.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Debug\DrawRay.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\BoxCollider2D\SetSize.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Warp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetLoop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\Selector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\IsKeyDown.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\RandomSequence.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetSpread.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\AddForceAtPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedTransform.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowSoftnessFade.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\SetInt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedVector2.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\SetXY.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedVector4.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\Stop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\ActiveInHierarchy.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoOnDestroy.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowStrength.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Angle.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Physics\Spherecast.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\StopRecording.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetSpeed.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\IsSleeping.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\IsInTransition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\UtilitySelector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetTime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetStepOffset.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\GetRadius.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetSpotAngle.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\GetButton.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPan.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\Lerp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredTrigger.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Collider\SetEnabled.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CircleCollider2D\GetOffset.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalScale.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedBool.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoPointDrag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetEulerAngles.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetConstraints.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_Dictionary_2_Type_List_1_Object_Binding.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GameObjectExtension_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetStepOffset.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\ValueTypeBinding\Vector2Binder.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SimpleMove.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetParent.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\StartPlayback.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\Dot.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\Move.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetLocalEulerAngles.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetAngularDrag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedVector4.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_List_1_Type_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\ILRuntimeManager.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetDuration.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddForceAtPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetMute.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\FloatOperator.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\Find.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetGravtyScale.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\Sleep.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\Cooldown.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredCollision2D.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedTransformList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\Pause.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedQuaternion.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\RotateTowards.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetChildCount.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Behaviour\GetEnabled.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Time\SetTimeScale.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\GetAcceleration.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\I18NImage.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetVelocity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedObjectList.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_List_1_ILTypeInstance_Binding_Enumerator_Bin.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\Parallel.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Slerp.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetSpeed.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\RandomInt.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Exception_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetRadius.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetUpVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartLifetime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\Format.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetUpVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetIsStopped.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\IsKinematic.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\IsButtonDown.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoDelayInvoke.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Collider\GetEnabled.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_UI_CanvasScaler_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedVector2.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\Replace.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\Destroy.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartSize.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\AbstractClass\AbstractCollisionInvoker.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedCollider.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetHeight.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetSpread.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\GetCenter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\IsPlaying.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SharedGameObjectsToGameObjectList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\IsPlaying.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetRange.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetAudioClip.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetIsKinematic.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\Repeater.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\SetXYZ.cs" />
+    <Compile Include="Assets\GersonFrame\UIManager\Scripts\UIProfileTool.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoOnDisable.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\GetRandomString.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GersonFrame_SelfILRuntime_AbstractCollisionInvoker_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\GetMouseButton.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedAnimationCurve.cs" />
+    <Compile Include="Assets\GersonFrame\Guide\SonGuide\CycleGuide.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\Normalize.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\CSVReader.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetMagnitude.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\SetDestination.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetLookAtWeight.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedVector3.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\IsNullOrEmpty.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetCenterOfMass.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\UntilFailure.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoUpdate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\GetLength.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetIgnoreListenerVolume.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\IntOperator.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetShadowBias.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\SelectorEvaluator.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoTriggerStay.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedColor.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_Dictionary_2_Int32_ILTypeInstance_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\Dot.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedInt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\Distance.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Inverse.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GersonFrame_SelfILRuntime_AbstractMonoNormalInvoker_Binding.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GersonFrame_SelfILRuntime_AbstractMonoPointerInvoker_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddForce.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\IsGrounded.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetColor.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\ValueTypeBinding\Vector3Binder.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\Multiply.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetUseGravity.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoCollisionExit.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\FromToRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CircleCollider2D\SetRadius.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetMinDistance.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Object_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetPosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedObject.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\ClampMagnitude.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetMagnitude.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_Dictionary_2_Type_Int32_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedString.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Vibration\ThirdParties\NiceVibrations\Demo\Scripts\NiceVibrationsDemoManager.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetIsKinematic.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\MoveRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\GetSubstring.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Reflection_ConstructorInfo_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedGameObject.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\CrossFade.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\ParallelSelector.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Threading_Interlocked_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetVelocityUpdateMode.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetDeltaRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetIsKinematic.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Action_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Guide\SonGuide\RectGuide.cs" />
+    <Compile Include="Assets\GersonFrame\UIManager\Scripts\ViewElementAdapter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedGameObject.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Pause.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddExplosionForce.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetVelocity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedTransformList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetVolume.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetIsKinematic.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredCollision.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetForwardVector.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GersonFrame_SelfILRuntime_AbstractTriggerInvoker_Binding.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_Canvas_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\StartRecording.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetFreezeRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetStringToHash.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\IsSleeping.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedInt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetHeight.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_Vector2_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\GetMousePosition.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoFixedUpdate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\CrossFadeQueued.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetRadius.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetUpVector.cs" />
+    <Compile Include="Assets\GersonFrame\UIManager\Scripts\RayCastImage.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedObject.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPriority.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Reflection\SetFieldValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartSpeed.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_Screen_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledEndTime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\HasColliderHit.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedTransform.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\Stop.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetAngularVelocity.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_Transform_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\GetSpeed.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\LayerMask\SetLayer.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Behaviour\IsEnabled.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoTriggerEnter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\StackedConditional.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\AbstractClass\AbstractMonoPointerInvoker.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\LerpAngle.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\SetSlopeLimit.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetParticleCount.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\IsMouseDown.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedRect.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedQuaternion.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedTransform.cs" />
+    <Compile Include="Assets\GersonFrame\Third\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\SetSize.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\RandomFloat.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoAwake.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetRightVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetMaxParticles.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetHeight.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\GetApplyRootMotion.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetIgnoreListenerVolume.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Collections_Generic_List_1_String_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedFloat.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\GetPlaybackSpeed.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetForwardVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\IsKinematic.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\ValueTypeBinding\ValueTypeBindingDemo.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Quaternion\Dot.cs" />
+    <Compile Include="Assets\GersonFrame\UIManager\Scripts\HotfixVIewAdapter.cs" />
+    <Compile Include="Assets\GersonFrame\UIManager\Scripts\UIManager.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedLayerMask.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\MatchTarget.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Timeline\Play.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\SetAnimatePhysics.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetShadowStrength.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\SetString.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\System_Array_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\SetInt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Debug\DrawLine.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetRadius.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetDrag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetForwardVector.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\PlayerPrefs\SetFloat.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\GetRadius.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GersonFrame_BaseInternalMsg_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Wait.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\ParallelComplete.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_Mathf_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoLateUpdate.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\PlayOneShot.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\GetAnimatePhysics.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Physics\Linecast.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\Normalize.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\Play.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetMass.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Assets\DomainName.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetMinDistance.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\SetRadius.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsPlaying.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\ACLocalizationData.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Play.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\Blend.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedGameObjectList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Object Drawers\IntSliderAttribute.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedBool.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Time\GetRealtimeSinceStartup.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\CompareLayer.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Reflection\ComparePropertyValue.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetMaxDistance.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalEulerAngles.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedFloat.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetIntensity.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\Multiply.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_GameObject_Binding.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\GersonFrame_UI_UIManager_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoPointerDown.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\LocalizationManager.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedColor.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\RandomBool.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\ConditionalEvaluator.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Object Drawers\FloatSliderAttribute.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedGameObject.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animation\PlayQueued.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\MovePosition.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\SendEvent.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetAngularDrag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Input\GetAxisRaw.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\ReturnSuccess.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\LocalizationFonts.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\Find.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\Clear.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\SetBool.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedVector2Int.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetCenter.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\MoveTowards.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\MonoCollisionStay.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\GetSize.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedTrigger2D.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\CompareTo.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Renderer\SetMaterial.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\FindGameObjectsWithTag.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetEulerAngles.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\CompareTag.cs" />
+    <Compile Include="Assets\ILRuntime\BindScripts\UnityEngine_MonoBehaviour_Binding.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\InterruptMatchTarget.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedVector3Int.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Resume.cs" />
+    <Compile Include="Assets\GersonFrame\ILRuntime\Scripts\AbstractClass\AbstractTriggerInvoker.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\LookAt.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadows.cs" />
+    <Compile Include="Assets\GersonFrame\Third\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\ClampMagnitude.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetSqrMagnitude.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedString.cs" />
+    <Compile Include="Assets\GersonFrame\Third\I18N\ShrinkText.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedRect.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedGameObjectList.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\IsStopped.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\GersonFrame\Data\GuideShader\RectGuideAlaphGradient.shader" />
+    <None Include="Assets\GersonFrame\Third\BuildReport\CustomBuildScriptExample.txt" />
+    <None Include="Assets\GersonFrame\Data\GuideShader\CircleGuide.shader" />
+    <None Include="Assets\GersonFrame\link.xml" />
+    <None Include="Assets\GersonFrame\Third\BuildReport\README.txt" />
+    <None Include="Assets\GersonFrame\Third\Vibration\ThirdParties\NiceVibrations\Demo\Fonts\Lato\OFL.txt" />
+    <None Include="Assets\GersonFrame\Third\DOTween\DOTween.XML" />
+    <None Include="Assets\GersonFrame\Third\Vibration\ThirdParties\NiceVibrations\readme.txt" />
+    <None Include="Assets\GersonFrame\Third\Vibration\ThirdParties\NiceVibrations\Common\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\GersonFrame\Third\DOTween\readme.txt" />
+    <None Include="Assets\GersonFrame\Third\BuildReport\BuildReportToolOptions.xml" />
+    <None Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\BehaviorDesigner.Runtime.dll" />
+    <None Include="Assets\GersonFrame\Third\DOTween\DOTween.dll" />
+    <None Include="Assets\GersonFrame\ILRuntime\Data\CLRBindings.txt" />
+    <None Include="Assets\GersonFrame\Data\GuideShader\RectGuide.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AutoStreamingModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.AutoStreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudFoundationModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.CloudFoundationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BehaviorDesigner.Runtime">
+      <HintPath>Assets\GersonFrame\Third\Behavior Designer\Runtime\BehaviorDesigner.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime.Mono.Cecil.Mdb">
+      <HintPath>Library\PackageCache\com.ourpalm.ilruntime@2.0.2\Plugins\ILRuntime.Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime.Mono.Cecil">
+      <HintPath>Library\PackageCache\com.ourpalm.ilruntime@2.0.2\Plugins\ILRuntime.Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime.Mono.Cecil.Pdb">
+      <HintPath>Library\PackageCache\com.ourpalm.ilruntime@2.0.2\Plugins\ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\GersonFrame\Third\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>F:\Unity\2020.3.33f1c2\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AssetBundleBrowser.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AssetBundleBrowser.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="ILRuntime">
+      <HintPath>Library\ScriptAssemblies\ILRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="GersonFrame.csproj">
+      <Project>{9F6C46CA-4D67-7C7E-B064-47D161A48BDF}</Project>
+      <Name>GersonFrame</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{FB229E06-21E4-9A47-6ECA-C56364973A90}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{878DD7CE-D170-2D2B-F5C3-9FC771BD179C}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
