@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using GersonFrame.UI;
+using TMPro;
+
+namespace {3}
+{
+
+    public class {0} : ViewElementBase
+    {
+
+         public GameObject gameobject;
+
+
+       public {0}(GameObject go)
+        {
+            Init(go);
+        }
+
+		{1}
+
+
+        public override void InitElement(GameObject go)
+        {
+            gameobject=go;
+			{2}
+        }
+    }
+}

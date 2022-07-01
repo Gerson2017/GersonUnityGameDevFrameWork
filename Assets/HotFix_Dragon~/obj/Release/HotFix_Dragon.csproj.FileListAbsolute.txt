@@ -1,0 +1,5 @@
+D:\UnityProject\GersonILRuntimeFrameWork\GersonILRuntimeFrameWork\Assets\HotFix_Dragon~\obj\Release\HotFix_Dragon.csproj.CoreCompileInputs.cache
+D:\UnityProject\GersonILRuntimeFrameWork\GersonILRuntimeFrameWork\Assets\ILRuntime\HotFixDll\HotFix_Dragon.dll
+D:\UnityProject\GersonILRuntimeFrameWork\GersonILRuntimeFrameWork\Assets\ILRuntime\HotFixDll\HotFix_Dragon.pdb
+D:\UnityProject\GersonILRuntimeFrameWork\GersonILRuntimeFrameWork\Assets\HotFix_Dragon~\obj\Release\HotFix_Dragon.dll
+D:\UnityProject\GersonILRuntimeFrameWork\GersonILRuntimeFrameWork\Assets\HotFix_Dragon~\obj\Release\HotFix_Dragon.pdb
