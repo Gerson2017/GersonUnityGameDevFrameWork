@@ -393,7 +393,8 @@ public static class UnityBuildSettingsUtility
 
 
 #if !UNITY_5_1_AND_LESSER // 5.2 and greater
-		settings.EnableVirtualRealitySupport =   PlayerSettings.virtualRealitySupported;
+			Debug.LogError("Can not Supplied UNITY_5_1_AND_LESSER");
+		//settings.EnableVirtualRealitySupport =   PlayerSettings.virtualRealitySupported;
 #endif
 
 		// collect all aspect ratios

@@ -140,6 +140,7 @@
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\ReportData\BRT_AssetList.cs" />
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\Window\Screen\BRT_HelpScreen.cs" />
     <Compile Include="Assets\GersonFrame\Editor\Proto\ProtoTool\InputFileLoader.cs" />
+    <Compile Include="Assets\GersonFrame\Editor\UI\TextureSetting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GersonFrame\Third\DOTween\Editor\DOTweenEditor.XML" />

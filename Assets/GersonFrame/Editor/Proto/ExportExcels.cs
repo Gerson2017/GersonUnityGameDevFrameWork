@@ -543,7 +543,7 @@ public class Excel2ProtoTool
             else
                 AllConfigData = Activator.CreateInstance(AllConfigType);
         }
-        catch (Exception e)
+        catch (Exception )
         {
             AllConfigData = Activator.CreateInstance(AllConfigType);
         }
