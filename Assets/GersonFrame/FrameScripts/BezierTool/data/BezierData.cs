@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GersonFrame.Tool
+namespace GersonFrame
 {
 
 

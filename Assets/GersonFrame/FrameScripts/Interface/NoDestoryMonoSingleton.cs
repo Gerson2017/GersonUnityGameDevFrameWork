@@ -2,27 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-/// <summary>
-///不会被消销毁的Mono单例
-/// </summary>
-/// <typeparam name="T"></typeparam>
-public class NoDestoryMonoSingleton <T>: MonoBehaviour where T:NoDestoryMonoSingleton<T>
+namespace GersonFrame
 {
 
-    public static T mInstance { get; private set; }
 
-    private void Awake()
+
+    /// <summary>
+    ///不会被消销毁的Mono单例
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class NoDestoryMonoSingleton<T> : MonoBehaviour where T : NoDestoryMonoSingleton<T>
     {
-        if (mInstance==null)
+
+        public static T mInstance { get; private set; }
+
+        private void Awake()
         {
-            mInstance = this as T;
-            GameObject.DontDestroyOnLoad(gameObject);
+            if (mInstance == null)
+            {
+                mInstance = this as T;
+                GameObject.DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+
     }
 
 }

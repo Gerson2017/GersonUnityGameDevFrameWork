@@ -276,7 +276,7 @@ namespace Localization
             }
             catch (Exception e)
             {
-                MyDebuger.LogError(" not found sprite assets " + mCurLanguagePath + key + ".png");
+                MyDebuger.LogError(" not found sprite assets " + mCurLanguagePath + key + ".png" + e.ToString());
             }
             return newSprite;
         }

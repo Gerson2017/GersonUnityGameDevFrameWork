@@ -460,33 +460,15 @@ public class Excel2ProtoTool
     /// <summary>
     /// excel路径key
     /// </summary>
-    public static string ExcelPathKey
-    {
-        get
-        {
-            return Application.dataPath + "ExcelPathKey";
-        }
-    }
+    public static string ExcelPathKey=> Application.dataPath + "ExcelPathKey";
+
 
     /// <summary>
     /// 放热更cs文件路径key
     /// </summary>
-    public static string JsonPathKey
-    {
-        get
-        {
-            return Application.dataPath + "JsonPathKey";
-        }
-    }
+    public static string JsonPathKey=> Application.dataPath + "JsonPathKey";
 
-    public static string ExportBytesPathKey
-    {
-        get
-        {
-            return Application.dataPath + "ExportBytesPathKey";
-        }
-    }
-
+    public static string ExportBytesPathKey=> Application.dataPath + "ExportBytesPathKey";
 
     /// <summary>
     /// 就是导出cs的命名空间，可以自定义

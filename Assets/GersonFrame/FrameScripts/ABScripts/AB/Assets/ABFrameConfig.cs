@@ -13,8 +13,6 @@ namespace GersonFrame.ABFrame
         public string AssetbundleXMLConfigPath = "";
         [Header("AB资源Bytes文本路径")]
         public string AssetbundleBytesConfigPath = "";
-        [Header("针对IL2CPP模式下的TimeLine找不到问题 预留预制体路径")]
-        public string TimeLinePrefabPath = "";
     }
 
 
@@ -27,13 +25,7 @@ namespace GersonFrame.ABFrame
         /// <summary>
         /// 获取框架配置信息
         /// </summary>
-        public static ABFrameConfig Config
-        {
-            get
-            {
-                return UnityEditor.AssetDatabase.LoadAssetAtPath<ABFrameConfig>(ABFrameConfigPath);
-            }
-        }
+        public static ABFrameConfig Config=> UnityEditor.AssetDatabase.LoadAssetAtPath<ABFrameConfig>(ABFrameConfigPath);
 
 #endif
 

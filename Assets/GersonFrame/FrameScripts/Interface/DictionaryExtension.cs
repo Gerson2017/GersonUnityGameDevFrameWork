@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 
 
+namespace GersonFrame
+{
+
+
     /// <summary>
     /// 对Dictory的扩展
     /// </summary>
@@ -20,6 +24,7 @@ using System.Collections.Generic;
             return value;
         }
 
-  
 
+
+    }
 }

@@ -35,8 +35,6 @@ public class BuildApk : MonoBehaviour
     {
         BulidTarget = BuildTarget.Android;
         BuildHotfixDll();
-        ILRuntimeEditor.GenerateCLRBindingByAnalysis();
-        OpenStoryPanelPrefab();
         PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
         //打AB包
         BundleEditor.BuildAB(BulidTarget);
@@ -48,8 +46,6 @@ public class BuildApk : MonoBehaviour
     {
         BulidTarget = BuildTarget.Android;
         BuildHotfixDll();
-        ILRuntimeEditor.GenerateCLRBindingByAnalysis();
-        OpenStoryPanelPrefab();
         PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
         //打AB包
         BundleEditor.BuildAB(BulidTarget);
@@ -80,7 +76,6 @@ public class BuildApk : MonoBehaviour
     private static void BuildAPKByNowAB(bool updateveroion)
     {
         SetProjectKey();
-        OpenStoryPanelPrefab();
         BundleEditor.CopyABFilesToProject();
         //hotupdate 写入版本信息 
         UpdayeVersion(PlayerSettings.applicationIdentifier, updateveroion);
@@ -122,14 +117,7 @@ public class BuildApk : MonoBehaviour
     }
 
 
-    static void OpenStoryPanelPrefab()
-    {
-        string path = ABFrameConfigGeter.Config.TimeLinePrefabPath;
-        if (!string.IsNullOrEmpty(path))
-            AssetDatabase.OpenAsset(AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(path));
-        else
-            MyDebuger.LogWarning("未配置timeline预制体 请检查是否需要配置");
-    }
+
 
 
     private static string[] FindEnableEitorScenes()
@@ -169,7 +157,7 @@ public class BuildApk : MonoBehaviour
         TextAsset vesiontex = Resources.Load<TextAsset>("Version");
         if (vesiontex == null)
         {
-            Debug.LogError("未读取到本地版本");
+            Debug.LogError("未在Resource 文件夹读取到 Version 文件");
             return "0.0.0";
         }
         HotUpdateVersionInfo versionInfo = null;

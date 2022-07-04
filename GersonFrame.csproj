@@ -108,7 +108,6 @@
     <Compile Include="Assets\GersonFrame\FrameScripts\ABScripts\AB\Assets\ABFrameConfig.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Tool\ScrollView.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\ParseableSerializer.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Msg\MsgDespactcher.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\CompiledSerializer.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\BooleanSerializer.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Extensible.cs" />
@@ -175,7 +174,6 @@
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\EnumSerializer.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Interface\Singleton.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\IProtoTypeSerializer.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Msg\MsgType.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\ExtensibleUtil.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\ArrayDecorator.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Compiler\Local.cs" />
@@ -185,7 +183,6 @@
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\LitJson\Lexer.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\IOC\IOCContainer.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Tool\RecyclcCompent.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Msg\InternalMsgAdapter.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\ABScripts\AB\HotUpdate\Server\ServerInfo.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\IUtility.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializer.cs" />
@@ -203,8 +200,6 @@
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\IExtensible.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Tool\FingerTool.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\ProtoDecoratorBase.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Msg\BaseInternalMsg.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\TestArchitecture\TestArchitecure.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\ProtoContractAttribute.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Interface\GameObjectExtension.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Tool\NumberFormatTool.cs" />
@@ -257,8 +252,8 @@
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\ImmutableCollectionDecorator.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\SystemTypeSerializer.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\Rule\ICanRegisterMsg.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\TestArchitecture\TestUitility.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\DefaultValueDecorator.cs" />
+    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\EventSystem\EventSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GersonFrame\FrameScripts\GersonFrame.asmdef" />

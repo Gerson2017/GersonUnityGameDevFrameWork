@@ -57,13 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\ReportGeneration\BRT_UnityBuildSettingsUtility.cs" />
-    <Compile Include="Assets\GersonFrame\ILRuntime\Editor\AddMonoScriptsEditor.cs" />
     <Compile Include="Assets\GersonFrame\Editor\Proto\ProtogenEditor.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Editor\Object Drawers\IntSliderDrawer.cs" />
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\Window\Screen\BRT_BuildSettingsScreen.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Editor\BehaviorTreeInspector.cs" />
     <Compile Include="Assets\GersonFrame\Editor\Proto\SysUtil.cs" />
     <Compile Include="Assets\GersonFrame\Editor\HotUpdate\BundleHotFixWindow.cs" />
+    <Compile Include="Assets\GersonFrame\Editor\UI\TextureSetting.cs" />
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\Options\BRT_FiltersUsed.cs" />
     <Compile Include="Assets\GersonFrame\Third\I18N\Editor\I18NTextInspector.cs" />
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\FuzzyString\SorensenDiceDistance.cs" />
@@ -88,7 +88,6 @@
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\Window\Screen\BRT_AssetListScreen.cs" />
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\FuzzyString\LevenshteinDistance.cs" />
     <Compile Include="Assets\GersonFrame\Editor\MeshCombine.cs" />
-    <Compile Include="Assets\GersonFrame\ILRuntime\Editor\ILRuntimeEditor.cs" />
     <Compile Include="Assets\GersonFrame\Editor\ScrollViewEditor.cs" />
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\Window\Screen\BRT_BaseScreen.cs" />
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\ReportData\BRT_BuildSettingsCategoryType.cs" />
@@ -140,7 +139,6 @@
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\ReportData\BRT_AssetList.cs" />
     <Compile Include="Assets\GersonFrame\Third\BuildReport\Scripts\Editor\Window\Screen\BRT_HelpScreen.cs" />
     <Compile Include="Assets\GersonFrame\Editor\Proto\ProtoTool\InputFileLoader.cs" />
-    <Compile Include="Assets\GersonFrame\Editor\UI\TextureSetting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GersonFrame\Third\DOTween\Editor\DOTweenEditor.XML" />

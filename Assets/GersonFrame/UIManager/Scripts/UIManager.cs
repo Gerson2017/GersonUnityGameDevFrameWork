@@ -5,12 +5,13 @@ using GersonFrame.ABFrame;
 using GersonFrame.Tool;
 using DG.Tweening;
 using System.Linq;
-using GersonFrame.SelfILRuntime;
 
 namespace GersonFrame.UI
 {
-    public  class UIManager : MonoSingleton<UIManager>
+    public class UIManager : MonoSingleton<UIManager>
     {
+        private Camera _MainICamera;
+
         private Camera _UICamera;
         public Camera UICamera
         {
@@ -19,7 +20,10 @@ namespace GersonFrame.UI
                 if (_UICamera == null)
                 {
                     _UICamera = GameObject.Find("Cameras/CameraUI").GetComponent<Camera>();
+                    if (_UICamera == null)
+                        Debug.LogError("请设置UI相机  Cameras/CameraUI");
                 }
+
                 return _UICamera;
             }
         }
@@ -28,11 +32,14 @@ namespace GersonFrame.UI
         {
             get
             {
-                if (_UICamera == null)
+                if (_MainICamera == null)
                 {
-                    _UICamera = GameObject.Find("Cameras/Main Camera").GetComponent<Camera>();
+                    _MainICamera = GameObject.Find("Cameras/Main Camera").GetComponent<Camera>();
+                    if (_MainICamera == null)
+                        Debug.LogError("请设置UI相机  Cameras/Main Camera");
                 }
-                return _UICamera;
+
+                return _MainICamera;
             }
         }
 
@@ -66,7 +73,7 @@ namespace GersonFrame.UI
 
 
         private Dictionary<string, BaseHotView> m_innerViewDic = new Dictionary<string, BaseHotView>();
-        private const string m_uiPrefabsPath = "Assets/Prefabs/UI/InnerView/";
+        private const string PanelsPath = "Assets/Prefabs/UI/Panels/";
 
         [SerializeField]
         /// <summary>
@@ -81,34 +88,30 @@ namespace GersonFrame.UI
         /// 根据面板类型 得到实例化的面板
         /// </summary>
         /// <returns></returns>
-        private static BaseHotView GetMyView(string viewName, bool ishotFixView = false)
+        private static BaseHotView GetMyView(string panelName)
         {
-            BaseHotView panel = GetLoadedVIew(viewName);
+            BaseHotView panel = GetLoadedVIew(panelName);
 
             if (panel == null)
             {
-                Instance.m_prefabNameBuilder.SetStrs(m_uiPrefabsPath, viewName, ".prefab");
+                Instance.m_prefabNameBuilder.SetStrs(PanelsPath, panelName, ".prefab");
                 GameObject instPanel = ObjectManager.Instance.InstantiateObject(Instance.m_prefabNameBuilder.ToString(), false, false);
                 if (instPanel == null)
                 {
-                    MyDebuger.LogError("请检查 路径 " + m_uiPrefabsPath + " 是否有该 " + viewName + " 预制体");
+                    MyDebuger.LogError("请检查 路径 " + PanelsPath + " 是否有该 " + panelName + " 预制体");
                     return null;
                 }
                 instPanel.transform.SetParent(Instance.CanvasTs, false);
                 instPanel.transform.localScale = Vector3.one;
                 instPanel.transform.localPosition = Vector3.zero;
 
-                if (ishotFixView)
-                    panel = ILRuntimeManager.Instance.GetNewObjectEx<BaseHotView>(DomainType.UI, viewName);
-                else
-                {
-                    Type objType = Type.GetType(viewName, true);
-                    panel = (BaseHotView)Activator.CreateInstance(objType);
-                }
+
+                Type objType = Type.GetType(panelName, true);
+                panel = (BaseHotView)Activator.CreateInstance(objType);
                 if (panel != null)
                 {
-                    panel.SetViewInfo(instPanel, viewName, ishotFixView);
-                    Instance.m_innerViewDic.Add(viewName, panel);
+                    panel.SetViewInfo(instPanel, panelName);
+                    Instance.m_innerViewDic.Add(panelName, panel);
                 }
             }
             return panel;
@@ -131,9 +134,17 @@ namespace GersonFrame.UI
         }
 
 
-        public static BaseHotView ShowView(string viewName, bool ishotview = false, object param = null, object param2 = null, object param3 = null)
+
+
+
+        /// <summary>
+        /// 显示界面  只能在主域使用
+        /// </summary>
+        public static BaseHotView ShowView<T>(object param = null, object param2 = null, object param3 = null) where T : BaseHotView
         {
-            BaseHotView view = GetMyView(viewName, ishotview);
+            Type t = typeof(T);
+            string viewName = t.Name;
+            BaseHotView view = GetMyView(viewName);
             if (view == null)
             {
                 MyDebuger.LogError(" not found innerview " + viewName);
@@ -145,24 +156,6 @@ namespace GersonFrame.UI
             if (!Instance.m_updayeviewlist.Contains(view))
                 Instance.m_updayeviewlist.Add(view);
             return view;
-        }
-
-
-        /// <summary>
-        /// 显示界面  只能在主域使用
-        /// </summary>
-        public static BaseHotView ShowView<T>(object param = null, object param2 = null, object param3 = null) where T : BaseHotView
-        {
-            Type t = typeof(T);
-#if UNITY_EDITOR
-            if (t.Name.Contains("Adaptor"))
-            {
-                MyDebuger.LogError("热更界面请在域中请使用 ShowHotView<T> " + t.FullName);
-                return null;
-            }
-#endif
-
-            return ShowView(t.Name, false, param, param2, param3);
         }
 
 
@@ -187,34 +180,16 @@ namespace GersonFrame.UI
         }
 
 
-        /// <summary>
-        /// 暂定指定界面
-        /// </summary>
-        /// <param name="viewName"></param>
-        public static void PauseView(string viewName)
-        {
-            BaseHotView panel = GetLoadedVIew(viewName);
-            if (panel == null)
-                MyDebuger.LogErrorFormat("{0} 未使用过 无法调用Pause功能", viewName);
-            else
-                panel.OnPause();
-        }
+
+
 
         /// <summary>
-        /// 恢复指定界面
+        /// 隐藏界面  只能在主域使用
         /// </summary>
-        /// <param name="viewName"></param>
-        public static void ResumeView(string viewName)
+        public static void HideView<T>(bool destory = false) where T : BaseHotView
         {
-            BaseHotView panel = GetLoadedVIew(viewName);
-            if (panel == null)
-                MyDebuger.LogErrorFormat("{0} 未使用过 无法调用Resume功能", viewName);
-            else
-                panel.OnResume();
-        }
+            string viewName = ClassTool.Name<T>();
 
-        public static void HideView(string viewName, bool destory = false)
-        {
             BaseHotView view = Instance.m_innerViewDic.TryGet(viewName);
             if (view == null)
             {
@@ -231,21 +206,7 @@ namespace GersonFrame.UI
                 Instance.m_updateViewDic.Remove(viewName);
             if (Instance.m_updayeviewlist.Contains(view))
                 Instance.m_updayeviewlist.Remove(view);
-        }
 
-
-        /// <summary>
-        /// 隐藏界面  只能在主域使用
-        /// </summary>
-        public static void HideView<T>(bool destory = false) where T : BaseHotView
-        {
-            string viewname = ClassTool.Name<T>();
-            if (viewname.Contains("Adapter"))
-            {
-                MyDebuger.LogWarning("热更域请使用字符串隐藏界面");
-                return;
-            }
-            HideView(viewname, destory);
         }
 
 
@@ -262,7 +223,7 @@ namespace GersonFrame.UI
         }
 
 
-        private  void Update()
+        private void Update()
         {
             for (int i = 0; i < m_updayeviewlist.Count; i++)
                 m_updayeviewlist[i].Update();

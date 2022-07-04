@@ -12,26 +12,19 @@ namespace GersonFrame.UI
         Destory
     }
 
-    public abstract  class BaseHotView:BaseInternalMsg
+
+
+    public abstract  class BaseHotView
     {
         protected float m_showAmTime = 0.3f;
         public GameObject gameobject { get; private set; }
 
-        private Transform m_transform;
-        public Transform transform
-        {
-            get
-            {
-                if (m_transform==null)
-                    m_transform = gameobject.transform;
-                return m_transform;
-            }
-        }
-        public bool IsHotView { get; private set; }
+        public Transform transform => gameobject.transform;
+
 
         public string ViewName { get; private set; }
 
-        private Transform m_aMts = null;
+        private Transform animationTs = null;
 
         /// <summary>
         /// 界面是否是显示中
@@ -46,15 +39,14 @@ namespace GersonFrame.UI
         /// <param name="transform"></param>
         public void ChangeAmTs(Transform transform)
         {
-            m_aMts = transform;
+            animationTs = transform;
         }
 
 
-        internal void SetViewInfo(GameObject viewgo,string viewName, bool ishotview=false)
+        internal void SetViewInfo(GameObject viewgo,string viewName)
         {
             ViewName = viewName;
             this.gameobject = viewgo;
-            this.IsHotView = ishotview;
             InitView();
         }
 
@@ -67,9 +59,6 @@ namespace GersonFrame.UI
             this.ShowScalAm();
         }
 
-        public virtual void OnPause(){ }
-        public virtual void OnResume(){ }
-
         public virtual void OnExit()
         {
             if (this.mViewIState == ViewState.Destory) return;
@@ -80,12 +69,10 @@ namespace GersonFrame.UI
         public virtual void OnDestroy() 
         {
             this.mViewIState = ViewState.Destory;
-            gameobject.transform.DOKill();
-            Transform root = gameobject.transform.Find("root");
-            if (root!=null)
-                root.DOKill();
+            transform.DOKill();
+            if (animationTs != null&&animationTs!=transform)
+                animationTs.DOKill();
 
-            this.UnRegisterAll();
             this.UnRegisterMsgListener();
             this.UnRegisterNetMsg();
             ObjectManager.Instance.ReleaseObject(gameobject, 0);
@@ -137,16 +124,16 @@ namespace GersonFrame.UI
 
         public virtual void ShowScalAm()
         {
-            if (m_aMts == null)
-                m_aMts = gameobject.transform;
-            UIManager.PanelInAnim(0.5f, m_aMts, ShowEnd);
+            if (animationTs == null)
+                animationTs = gameobject.transform;
+            UIManager.PanelInAnim(0.5f, animationTs, ShowEnd);
         }
 
         public virtual void HideScalAm()
         {
-            if (m_aMts == null) 
-                m_aMts = gameobject.transform;
-            UIManager.PanelOutAnim(0.3f, m_aMts, HideEnd);
+            if (animationTs == null) 
+                animationTs = gameobject.transform;
+            UIManager.PanelOutAnim(0.3f, animationTs, HideEnd);
         }
 
         protected virtual void ShowEnd(){ }
@@ -154,9 +141,9 @@ namespace GersonFrame.UI
         protected virtual void HideEnd()
         {
             this.gameobject.Hide();
-            if (m_aMts == null)
-                m_aMts = gameobject.transform;
-            m_aMts.localScale = Vector3.one;
+            if (animationTs == null)
+                animationTs = gameobject.transform;
+            animationTs.localScale = Vector3.one;
         }
 
     }
