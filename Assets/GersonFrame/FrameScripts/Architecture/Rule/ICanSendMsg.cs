@@ -13,10 +13,18 @@ namespace GersonFrame
 
     public static class CanSendMsgExtension
     {
-        public static void SendMsg(this ICanSendMsg self,string msgType, object arg1=null, object arg2=null, object arg3=null) 
+        public static void SendEvt<T>(this ICanSendMsg self) where T:new()
         {
-            self.Architecture.SendMsg(msgType,arg1,arg2,arg3);
+            self.Architecture.SendEvt<T>();
         }
+
+
+        public static void SendEvt<T>(this ICanSendMsg self,T t) 
+        {
+            self.Architecture.SendEvt(t);
+        }
+
+
     }
 }
 

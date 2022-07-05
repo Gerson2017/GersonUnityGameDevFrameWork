@@ -13,21 +13,14 @@ namespace GersonFrame.Tool
         public float m_RecycleTime = 0.7f;
         WaitForSeconds m_waitforsecond;
 
-        private BaseInternalMsg m_innerMsg = new BaseInternalMsg();
 
         private void OnEnable()
         {
             if (m_waitforsecond==null)
                 m_waitforsecond= new WaitForSeconds(m_RecycleTime);
-            m_innerMsg.RegisterMsg("TestRegister",this.TestRegister);
-            m_innerMsg.RegisterMsg("TestRegister", this.TestRegister);
             this.StartCoroutine(Disable());
         }
 
-        private void TestRegister(object arg1, object arg2, object arg3)
-        {
-            MyDebuger.Log("TestRegister");
-        }
 
         IEnumerator  Disable()
         {

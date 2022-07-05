@@ -55,39 +55,23 @@ namespace GersonFrame
         /// </summary>
         void SendCommand<T>(T command, object arg1, object arg2, object arg3) where T : ICommand;
 
-        /// <summary>
-        /// 发送事件
-        /// </summary>
-        /// <param name="msgType"></param>
-        /// <param name="arg1"></param>
-        /// <param name="arg2"></param>
-        /// <param name="arg3"></param>
-         void SendMsg(string msgType, object arg1 = null, object arg2 = null, object arg3 = null);
 
-        /// <summary>
-        /// 注册事件
-        /// </summary>
-        /// <param name="msgType"></param>
-        /// <param name="arg1"></param>
-        /// <param name="arg2"></param>
-        /// <param name="arg3"></param>
-         void RegisterMsg(string msgType, System.Action<object, object, object> onMsgReceived);
+        void SendEvt<EvtType>() where EvtType : new();
 
+
+         void SendEvt<EvtType>(EvtType t);
+
+         void RegistEvt<EvtType>(System.Action<EvtType> onEvent);
         /// <summary>
         /// 卸载指定消息的 某个监听
         /// </summary>
-         void UnRegisterMsg(string msgType, System.Action<object, object, object> onMsgReceived);
-
-        /// <summary>
-        /// 卸载指定消息的所有监听
-        /// </summary>
-        /// <param name="msgType"></param>
-         void UnRegisterMsg(string msgType);
+        void UnRegisterEvt<EvtType>(System.Action<EvtType> onEvent);
 
         /// <summary>
         /// 卸载所有监听
         /// </summary>
-         void UnRegisterAll();
+         void UnRegisterAllEvt();
+
 
 
     }
@@ -226,42 +210,51 @@ namespace GersonFrame
 
         //=====================Msg================
 
-        protected BaseInternalMsg m_msg = new BaseInternalMsg();
+        private  EventSystemIOC m_eventIoc = new EventSystemIOC();
 
-        public void SendMsg(string msgType, object arg1 = null, object arg2 = null, object arg3 = null)
+        public void SendEvt<EvtType>() where EvtType : new()
         {
-            m_msg.SendMsg(msgType, arg1, arg2, arg3);
+            var evt = m_eventIoc.GetEvent<EasyEvent<EvtType>>();
+            if (evt!=null)
+                evt.Trigger(new EvtType());
         }
 
-        public void RegisterMsg(string msgType,System.Action<object, object, object> onMsgReceived)
+
+        public void SendEvt<EvtType>(EvtType t)
         {
-            m_msg.RegisterMsg(msgType,onMsgReceived);
+            var evt = m_eventIoc.GetEvent<EasyEvent<EvtType>>();
+            if (evt != null)
+                evt.Trigger(t);
+        }
+
+        public void RegistEvt<EvtType>(System.Action<EvtType> onEvent)
+        {
+            m_eventIoc.GetOrAddEvent<EasyEvent<EvtType>>().Register(onEvent);
         }
 
         /// <summary>
         /// 卸载指定消息的 某个监听
         /// </summary>
-        public void UnRegisterMsg(string msgType,System.Action<object, object, object> onMsgReceived)
+        public void UnRegisterEvt<EvtType>(System.Action<EvtType> onEvent)
         {
-            m_msg.UnRegisterMsg(msgType, onMsgReceived);
+            var evt = m_eventIoc.GetEvent<EasyEvent<EvtType>>();
+            if (evt!=null)
+                evt.UnRegister(onEvent);
+            
         }
 
-        /// <summary>
-        /// 卸载指定消息的所有监听
-        /// </summary>
-        /// <param name="msgType"></param>
-        public void UnRegisterMsg(string msgType)
-        {
-            m_msg.UnRegisterMsg(msgType);
-        }
+
 
         /// <summary>
         /// 卸载所有监听
         /// </summary>
-        public void UnRegisterAll()
+        public void UnRegisterAllEvt()
         {
-            m_msg.UnRegisterAll();
+            m_eventIoc.RemoveAllEvent();
         }
+
+
+
     }
 
 }

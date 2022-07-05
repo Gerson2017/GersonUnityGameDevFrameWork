@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace GersonFrame.Tool
+namespace GersonFrame
 {
     public class FingerTool
     {        
@@ -17,11 +17,11 @@ namespace GersonFrame.Tool
         public static bool IsPointerOverGameObject(Vector2 mousePosition)
         {
             //创建一个点击事件
-            PointerEventData eventData = new PointerEventData(EventSystem.current);
+            PointerEventData eventData = new PointerEventData(UnityEngine.EventSystems.EventSystem.current);
             eventData.position = mousePosition;
             List<RaycastResult> raycastResults = new List<RaycastResult>();
             //向点击位置发射一条射线，检测是否点击UI
-            EventSystem.current.RaycastAll(eventData, raycastResults);
+            UnityEngine.EventSystems. EventSystem.current.RaycastAll(eventData, raycastResults);
             if (raycastResults.Count > 0) return true;
             else return false;
         }
@@ -34,16 +34,16 @@ namespace GersonFrame.Tool
         /// </summary>
         public static bool IsPointerOverUIObject()
         {
-            if (EventSystem.current == null)
+            if (UnityEngine.EventSystems.EventSystem.current == null)
                 return false;
 
             // Referencing this code for GraphicRaycaster https://gist.github.com/stramit/ead7ca1f432f3c0f181f
             // the ray cast appears to require only eventData.position.
-            PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+            PointerEventData eventDataCurrentPosition = new PointerEventData(UnityEngine.EventSystems.EventSystem.current);
             eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
 
             List<RaycastResult> results = new List<RaycastResult>();
-            EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+            UnityEngine.EventSystems.EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
             return results.Count > 0;
         }
 
@@ -53,12 +53,12 @@ namespace GersonFrame.Tool
         /// </summary>
         public static bool IsPointerOverUIObject(Canvas canvas, Vector2 screenPosition)
         {
-            if (EventSystem.current == null)
+            if (UnityEngine.EventSystems.EventSystem.current == null)
                 return false;
 
             // Referencing this code for GraphicRaycaster https://gist.github.com/stramit/ead7ca1f432f3c0f181f
             // the ray cast appears to require only eventData.position.
-            PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+            PointerEventData eventDataCurrentPosition = new PointerEventData(UnityEngine.EventSystems.EventSystem.current);
             eventDataCurrentPosition.position = screenPosition;
 
             GraphicRaycaster uiRaycaster = canvas.gameObject.GetComponent<GraphicRaycaster>();

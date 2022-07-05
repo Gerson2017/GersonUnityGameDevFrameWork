@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{9F6C46CA-4D67-7C7E-B064-47D161A48BDF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -154,6 +155,7 @@
     <Compile Include="Assets\GersonFrame\FrameScripts\ABScripts\AB\CRC32.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Interface\MonoSingleton.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\StateMachine\BaseState.cs" />
+    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\EventSystem\GEventSystem.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Tool\MyDebuger_ILRunTimeBinding.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\PropertyDecorator.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Meta\BasicList.cs" />
@@ -251,9 +253,8 @@
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\DecimalSerializer.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\ImmutableCollectionDecorator.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\SystemTypeSerializer.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\Rule\ICanRegisterMsg.cs" />
+    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\Rule\ICanRegisteEvt.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\DefaultValueDecorator.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\EventSystem\EventSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GersonFrame\FrameScripts\GersonFrame.asmdef" />

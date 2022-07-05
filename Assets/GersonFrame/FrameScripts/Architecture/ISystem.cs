@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace GersonFrame
 {
-    public interface ISystem : IBelongToArchitecture,ICanSetArchitecture,ICanGetModel,ICanGetUtility,ICanSendMsg,ICanRegisterMsg
+    public interface ISystem : IBelongToArchitecture,ICanSetArchitecture,ICanGetModel,ICanGetUtility,ICanSendMsg,ICanRegisteEvt
     {
         void Init();
     }
