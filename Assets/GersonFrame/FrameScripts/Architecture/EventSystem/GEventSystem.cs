@@ -12,7 +12,7 @@ namespace GersonFrame
     }
 
 
-    public interface IEventType
+    public interface ITypeEvent
     {
         EventType mEventType { get;}
     }
@@ -30,7 +30,7 @@ namespace GersonFrame
         }
 
 
-        public static void Register<T>(Action<T> callback) where T:IEventType,new()
+        public static void Register<T>(Action<T> callback) where T:ITypeEvent,new()
         {
             m_eventIoc.GetOrAddEvent<EasyEvent<T>>().Register(callback);
         }
@@ -39,7 +39,7 @@ namespace GersonFrame
 
 
 
-    public class EasyEvent: IEventType
+    public class EasyEvent: ITypeEvent
     {
         private Action mOnEvent =()=> { };
 
@@ -63,7 +63,7 @@ namespace GersonFrame
 
 
 
-    public class EasyEvent<T> :IEventType
+    public class EasyEvent<T> :ITypeEvent
     {
         private Action<T> mOnEvent = e => { };
 
@@ -129,24 +129,13 @@ namespace GersonFrame
 
     public class EventSystemIOC
     {
-        private Dictionary<Type, IEventType> m_typeEventDic= new Dictionary<Type, IEventType>();
+        private Dictionary<Type, ITypeEvent> m_typeEventDic= new Dictionary<Type, ITypeEvent>();
 
 
-        public void AddEvent<T>() where T : IEventType, new()
+
+        public T GetEvent<T>() where T : ITypeEvent
         {
-            m_typeEventDic.Add(typeof(T), new T());
-        }
-
-
-        public void AddEvent<T>(T t) where T : IEventType, new()
-        {
-            m_typeEventDic.Add(typeof(T), t);
-        }
-
-
-        public T GetEvent<T>() where T : IEventType
-        {
-            IEventType e;
+            ITypeEvent e;
 
             if (m_typeEventDic.TryGetValue(typeof(T), out e))
                 return (T)e;
@@ -155,7 +144,7 @@ namespace GersonFrame
         }
 
 
-        public bool RemoveEvent<T>() where T : IEventType
+        public bool RemoveEvent<T>() where T : ITypeEvent
         {
             Type type = typeof(T);
             if (m_typeEventDic.ContainsKey(type))
@@ -167,13 +156,11 @@ namespace GersonFrame
         }
 
 
-        public T GetOrAddEvent<T>() where T : IEventType, new()
+        public T GetOrAddEvent<T>() where T : ITypeEvent, new()
         {
             var eType = typeof(T);
             if (m_typeEventDic.TryGetValue(eType, out var e))
-            {
                 return (T)e;
-            }
 
             var t = new T();
             m_typeEventDic.Add(eType, t);

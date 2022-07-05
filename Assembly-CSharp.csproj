@@ -102,9 +102,9 @@
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetSlopeLimit.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\RandomProbability.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetTime.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddTorque.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedRect.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Idle.cs" />
-    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddTorque.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\Sleep.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Log.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Reflection\CompareFieldValue.cs" />
@@ -264,8 +264,8 @@
     <Compile Include="Assets\GersonFrame\Third\I18N\LocalizationData.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasEnteredTrigger2D.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetCookie.cs" />
-    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetVector2.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartRotation.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetVector2.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\Distance.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Animator\SetApplyRootMotion.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowSoftness.cs" />
@@ -274,9 +274,9 @@
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetRightVector.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\StartBehaviorTree.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetColor.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetCenter.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\GetXYZ.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartDelay.cs" />
-    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CapsuleCollider\SetCenter.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetTimeSamples.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\GetLocalRotation.cs" />
     <Compile Include="Assets\GersonFrame\Third\Vibration\ThirdParties\NiceVibrations\Common\Scripts\MMVibrationManager.cs" />
@@ -449,8 +449,8 @@
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\IsNullOrEmpty.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetCenterOfMass.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Decorators\UntilFailure.cs" />
-    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\GetLength.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetIgnoreListenerVolume.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\GetLength.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Math\IntOperator.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\GetShadowBias.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Composites\SelectorEvaluator.cs" />
@@ -508,8 +508,8 @@
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetPriority.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Actions\Reflection\SetFieldValue.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartSpeed.cs" />
-    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledEndTime.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\HasColliderHit.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledEndTime.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedTransform.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\AudioSource\Stop.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetAngularVelocity.cs" />
@@ -597,10 +597,10 @@
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedVector2Int.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetCenter.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector3\MoveTowards.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Renderer\SetMaterial.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\GetSize.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Conditionals\Physics\HasExitedTrigger2D.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\String\CompareTo.cs" />
-    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Renderer\SetMaterial.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\FindGameObjectsWithTag.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\SetEulerAngles.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\GameObject\CompareTag.cs" />
@@ -608,8 +608,8 @@
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedVector3Int.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\Resume.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Transform\LookAt.cs" />
-    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadows.cs" />
     <Compile Include="Assets\GersonFrame\Third\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadows.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\ClampMagnitude.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetSqrMagnitude.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedString.cs" />
@@ -617,6 +617,8 @@
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedRect.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Variables\SharedGameObjectList.cs" />
     <Compile Include="Assets\GersonFrame\Third\Behavior Designer\Runtime\Tasks\Unity\NavMeshAgent\IsStopped.cs" />
+    <Compile Include="Assets\GersonFrame\Demo\Scripts\EventArchiteure.cs" />
+    <Compile Include="Assets\GersonFrame\Demo\Scripts\EventBtn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GersonFrame\Data\GuideShader\RectGuideAlaphGradient.shader" />

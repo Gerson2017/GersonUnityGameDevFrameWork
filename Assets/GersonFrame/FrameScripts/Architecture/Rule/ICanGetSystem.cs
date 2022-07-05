@@ -19,7 +19,7 @@ namespace GersonFrame
     {
         public static T GetSystem<T>(this ICanGetSystem self)where T:class,ISystem
         {
-            return self.GetSystem<T>();
+            return self.Architecture.GetSystem<T>();
         }
     }
 
