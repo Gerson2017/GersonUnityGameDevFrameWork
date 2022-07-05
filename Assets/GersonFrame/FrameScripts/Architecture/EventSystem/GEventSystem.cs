@@ -6,15 +6,14 @@ using UnityEngine;
 namespace GersonFrame
 {
 
-    public enum EventType
-    {
-        Normal,
-    }
-
 
     public interface ITypeEvent
     {
-        EventType mEventType { get;}
+    }
+
+    public interface IUITypeEvent:ITypeEvent
+    {
+
     }
 
 
@@ -43,7 +42,6 @@ namespace GersonFrame
     {
         private Action mOnEvent =()=> { };
 
-        public EventType mEventType => EventType.Normal;
 
         public void Register(Action onEvent)
         {
@@ -67,7 +65,6 @@ namespace GersonFrame
     {
         private Action<T> mOnEvent = e => { };
 
-        public EventType mEventType => EventType.Normal;
 
         public void Register(Action<T> onEvent)
         {
@@ -168,11 +165,31 @@ namespace GersonFrame
         }
 
 
-
         public void RemoveAllEvent()
         {
             m_typeEventDic.Clear();
         }
+
+
+
+        public void RemoveEventByType<T>()
+        {
+            List<Type> removetypoes = new List<Type>();
+            foreach (var item in m_typeEventDic)
+            {
+                if (item.Value is T)
+                    removetypoes.Add(item.Key);
+            }
+
+            for (int i = 0; i < removetypoes.Count; i++)
+            {
+                Type t= removetypoes[i];
+                if (m_typeEventDic.ContainsKey(t))
+                    m_typeEventDic.Remove(t);
+            }
+
+        }
+
 
     }
 

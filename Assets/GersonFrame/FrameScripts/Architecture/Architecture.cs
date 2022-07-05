@@ -62,15 +62,22 @@ namespace GersonFrame
          void SendEvt<EvtType>(EvtType t);
 
          void RegistEvt<EvtType>(System.Action<EvtType> onEvent);
+
         /// <summary>
         /// 卸载指定消息的 某个监听
         /// </summary>
         void UnRegisterEvt<EvtType>(System.Action<EvtType> onEvent);
 
         /// <summary>
+        /// 卸载某种类型的事件
+        /// </summary>
+        /// <typeparam name="EvtType"></typeparam>
+        void UnRegisterEvtByType<EvtType>();
+
+        /// <summary>
         /// 卸载所有监听
         /// </summary>
-         void UnRegisterAllEvt();
+        void UnRegisterAllEvt();
 
 
 
@@ -243,7 +250,14 @@ namespace GersonFrame
             
         }
 
-
+        /// <summary>
+        /// 卸载指定类型的
+        /// </summary>
+        /// <typeparam name="EvtType"></typeparam>
+        public void UnRegisterEvtByType<EvtType>()
+        {
+            m_eventIoc.RemoveEventByType<EasyEvent<EvtType>>();
+        }
 
         /// <summary>
         /// 卸载所有监听

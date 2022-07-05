@@ -9,7 +9,13 @@ using System;
 
 public class ClickEvent : ITypeEvent
 {
-    public GersonFrame.EventType mEventType => GersonFrame.EventType.Normal;
+   
+}
+
+
+public class UIClickEvent : IUITypeEvent
+{
+
 }
 
 public class TestEventCommond : AbstractCommand
@@ -31,17 +37,24 @@ public class EventBtn : MonoBehaviour,IController
         Button evtbtn=   this.gameObject.GetComponent<Button>();
         evtbtn.onClick.AddListener(this.OnBtnClick);
         this.Architecture.RegistEvt<ClickEvent>( OnClickCallBack);
+        this.Architecture.RegistEvt<UIClickEvent>(OnUIClickCallBack);
+    }
+
+    private void OnUIClickCallBack(UIClickEvent obj)
+    {
+        Debug.Log("OnUIClickCallBack");
     }
 
     private void OnClickCallBack(ClickEvent callbackdata)
     {
-        Debug.Log(callbackdata.mEventType);
-        this.Architecture.UnRegisterEvt<ClickEvent>(OnClickCallBack);
+        Debug.Log(callbackdata.GetType());
+        this.Architecture.UnRegisterEvtByType<UIClickEvent>();
     }
 
     private void OnBtnClick()
     {
         this.SendCommand<TestEventCommond>();
+        this.SendEvt<UIClickEvent>();
     }
 
 
