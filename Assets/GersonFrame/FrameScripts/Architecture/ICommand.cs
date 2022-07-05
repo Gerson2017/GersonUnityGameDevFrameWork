@@ -5,7 +5,11 @@ using UnityEngine;
 
 namespace GersonFrame
 {
-    public interface ICommand : IBelongToArchitecture, ICanSetArchitecture,ICanGetModel,ICanGetSystem,ICanGetUtility
+
+    /// <summary>
+    /// 当逻辑复杂时分摊交互功能 否则使用Event就行
+    /// </summary>
+    public interface ICommand : IBelongToArchitecture, ICanSetArchitecture,ICanGetModel,ICanGetSystem,ICanGetUtility,ICanSendEvent
     {
         void Execute(object arg1,object arg2,object arg3);
     }

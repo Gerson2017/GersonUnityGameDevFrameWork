@@ -211,7 +211,7 @@
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\ProtoIgnoreAttribute.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\ProtoWriter.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\ProtoConverterAttribute.cs" />
-    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\Rule\ICanSendMsg.cs" />
+    <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\Rule\ICanSendEvent.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Architecture\IModel.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\protobuf-net\Serializers\Int32Serializer.cs" />
     <Compile Include="Assets\GersonFrame\FrameScripts\Third\Google.Protobuf\Collections\RepeatedField.cs" />
